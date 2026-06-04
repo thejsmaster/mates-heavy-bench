@@ -1,234 +1,175 @@
-import { html, x, pathAtom } from "mates";
-import { ABTestResults } from "./pages/ABTestResults.ts";
-import { AdPerformance } from "./pages/AdPerformance.ts";
-import { AffiliateNetwork } from "./pages/AffiliateNetwork.ts";
-import { AnalyticsDashboard } from "./pages/AnalyticsDashboard.ts";
-import { ApiDocumentation } from "./pages/ApiDocumentation.ts";
-import { AssetManagement } from "./pages/AssetManagement.ts";
-import { AuditLogViewer } from "./pages/AuditLogViewer.ts";
-import { BackupRestore } from "./pages/BackupRestore.ts";
-import { BoardReport } from "./pages/BoardReport.ts";
-import { BounceRateAnalysis } from "./pages/BounceRateAnalysis.ts";
-import { BranchPerformance } from "./pages/BranchPerformance.ts";
-import { BrowserStats } from "./pages/BrowserStats.ts";
-import { BudgetPlanning } from "./pages/BudgetPlanning.ts";
-import { BugTracker } from "./pages/BugTracker.ts";
-import { BusinessContinuity } from "./pages/BusinessContinuity.ts";
-import { CacheAnalytics } from "./pages/CacheAnalytics.ts";
-import { ChatRoom } from "./pages/ChatRoom.ts";
-import { ChurnAnalysis } from "./pages/ChurnAnalysis.ts";
-import { CodeReviewQueue } from "./pages/CodeReviewQueue.ts";
-import { CommissionReport } from "./pages/CommissionReport.ts";
-import { ComplianceReport } from "./pages/ComplianceReport.ts";
-import { ContentManagement } from "./pages/ContentManagement.ts";
-import { ContractLibrary } from "./pages/ContractLibrary.ts";
-import { ContractRenewals } from "./pages/ContractRenewals.ts";
-import { ConversionFunnel } from "./pages/ConversionFunnel.ts";
-import { CustomerInsights } from "./pages/CustomerInsights.ts";
-import { CustomerSegments } from "./pages/CustomerSegments.ts";
-import { DataExport } from "./pages/DataExport.ts";
-import { DatabaseAdmin } from "./pages/DatabaseAdmin.ts";
-import { DealTracker } from "./pages/DealTracker.ts";
-import { DeploymentHistory } from "./pages/DeploymentHistory.ts";
-import { DeviceBreakdown } from "./pages/DeviceBreakdown.ts";
-import { DisasterRecovery } from "./pages/DisasterRecovery.ts";
-import { EmailCampaigns } from "./pages/EmailCampaigns.ts";
-import { EmployeeOnboarding } from "./pages/EmployeeOnboarding.ts";
-import { ExecutiveSummary } from "./pages/ExecutiveSummary.ts";
-import { ExpenseTracker } from "./pages/ExpenseTracker.ts";
-import { FeatureFlags } from "./pages/FeatureFlags.ts";
-import { FeedbackSurvey } from "./pages/FeedbackSurvey.ts";
-import { GeoTargeting } from "./pages/GeoTargeting.ts";
-import { GoalTracking } from "./pages/GoalTracking.ts";
-import { HirePipeline } from "./pages/HirePipeline.ts";
-import { IncidentReport } from "./pages/IncidentReport.ts";
-import { InventoryOverview } from "./pages/InventoryOverview.ts";
-import { InvestorUpdate } from "./pages/InvestorUpdate.ts";
-import { InvoiceManager } from "./pages/InvoiceManager.ts";
-import { KpiDashboard } from "./pages/KpiDashboard.ts";
-import { LanguageDistribution } from "./pages/LanguageDistribution.ts";
-import { LeadGeneration } from "./pages/LeadGeneration.ts";
-import { LeaveManagement } from "./pages/LeaveManagement.ts";
-import { LifetimeValue } from "./pages/LifetimeValue.ts";
-import { LoadTestResults } from "./pages/LoadTestResults.ts";
-import { MarketingCampaign } from "./pages/MarketingCampaign.ts";
-import { NotificationCenter } from "./pages/NotificationCenter.ts";
-import { OrderTracking } from "./pages/OrderTracking.ts";
-import { OrgChartViewer } from "./pages/OrgChartViewer.ts";
-import { OsAnalytics } from "./pages/OsAnalytics.ts";
-import { OvertimeReport } from "./pages/OvertimeReport.ts";
-import { PageViewsHeatmap } from "./pages/PageViewsHeatmap.ts";
-import { PartnerPortal } from "./pages/PartnerPortal.ts";
-import { PayrollSummary } from "./pages/PayrollSummary.ts";
-import { PerformanceMetrics } from "./pages/PerformanceMetrics.ts";
-import { PerformanceReview } from "./pages/PerformanceReview.ts";
-import { PipelineForecast } from "./pages/PipelineForecast.ts";
-import { PolicyLibrary } from "./pages/PolicyLibrary.ts";
-import { ProcurementOrder } from "./pages/ProcurementOrder.ts";
-import { ProductCatalog } from "./pages/ProductCatalog.ts";
-import { ProductRoadmap } from "./pages/ProductRoadmap.ts";
-import { QualityControl } from "./pages/QualityControl.ts";
-import { QuarterlyForecast } from "./pages/QuarterlyForecast.ts";
-import { ReferralProgram } from "./pages/ReferralProgram.ts";
-import { RegionalSales } from "./pages/RegionalSales.ts";
-import { ReleaseNotes } from "./pages/ReleaseNotes.ts";
-import { ResellerDashboard } from "./pages/ResellerDashboard.ts";
-import { ResourceAllocation } from "./pages/ResourceAllocation.ts";
-import { RetentionCohorts } from "./pages/RetentionCohorts.ts";
-import { ReturnManagement } from "./pages/ReturnManagement.ts";
-import { RevenueAnalysis } from "./pages/RevenueAnalysis.ts";
-import { RiskAssessment } from "./pages/RiskAssessment.ts";
-import { RolePermissions } from "./pages/RolePermissions.ts";
-import { SalesReport } from "./pages/SalesReport.ts";
-import { SearchQueries } from "./pages/SearchQueries.ts";
-import { SecurityAlerts } from "./pages/SecurityAlerts.ts";
-import { SeoRankings } from "./pages/SeoRankings.ts";
-import { ServerMonitoring } from "./pages/ServerMonitoring.ts";
-import { ShiftScheduler } from "./pages/ShiftScheduler.ts";
-import { ShippingDashboard } from "./pages/ShippingDashboard.ts";
-import { SkillMatrix } from "./pages/SkillMatrix.ts";
-import { SocialMediaAnalytics } from "./pages/SocialMediaAnalytics.ts";
-import { SprintPlanner } from "./pages/SprintPlanner.ts";
-import { StakeholderMap } from "./pages/StakeholderMap.ts";
-import { StoreLocator } from "./pages/StoreLocator.ts";
-import { SubscriptionPlans } from "./pages/SubscriptionPlans.ts";
-import { SuccessionPlanning } from "./pages/SuccessionPlanning.ts";
-import { SupportTickets } from "./pages/SupportTickets.ts";
-import { SystemHealth } from "./pages/SystemHealth.ts";
-import { TeamDirectory } from "./pages/TeamDirectory.ts";
-import { TimeOnSite } from "./pages/TimeOnSite.ts";
-import { TimesheetApproval } from "./pages/TimesheetApproval.ts";
-import { TrafficSources } from "./pages/TrafficSources.ts";
-import { TrainingModules } from "./pages/TrainingModules.ts";
-import { UserManagement } from "./pages/UserManagement.ts";
-import { UserSessions } from "./pages/UserSessions.ts";
-import { VendorPortal } from "./pages/VendorPortal.ts";
-import { VendorScorecard } from "./pages/VendorScorecard.ts";
-import { WarehouseMap } from "./pages/WarehouseMap.ts";
-import { WorkflowBuilder } from "./pages/WorkflowBuilder.ts";
-import { YearEndReview } from "./pages/YearEndReview.ts";
+import { Router, html, navigateTo } from "mates";
 
-const _pages: Record<string, any> = {
-  "/page-001": ABTestResults,
-  "/page-002": AdPerformance,
-  "/page-003": AffiliateNetwork,
-  "/page-004": AnalyticsDashboard,
-  "/page-005": ApiDocumentation,
-  "/page-006": AssetManagement,
-  "/page-007": AuditLogViewer,
-  "/page-008": BackupRestore,
-  "/page-009": BoardReport,
-  "/page-010": BounceRateAnalysis,
-  "/page-011": BranchPerformance,
-  "/page-012": BrowserStats,
-  "/page-013": BudgetPlanning,
-  "/page-014": BugTracker,
-  "/page-015": BusinessContinuity,
-  "/page-016": CacheAnalytics,
-  "/page-017": ChatRoom,
-  "/page-018": ChurnAnalysis,
-  "/page-019": CodeReviewQueue,
-  "/page-020": CommissionReport,
-  "/page-021": ComplianceReport,
-  "/page-022": ContentManagement,
-  "/page-023": ContractLibrary,
-  "/page-024": ContractRenewals,
-  "/page-025": ConversionFunnel,
-  "/page-026": CustomerInsights,
-  "/page-027": CustomerSegments,
-  "/page-028": DataExport,
-  "/page-029": DatabaseAdmin,
-  "/page-030": DealTracker,
-  "/page-031": DeploymentHistory,
-  "/page-032": DeviceBreakdown,
-  "/page-033": DisasterRecovery,
-  "/page-034": EmailCampaigns,
-  "/page-035": EmployeeOnboarding,
-  "/page-036": ExecutiveSummary,
-  "/page-037": ExpenseTracker,
-  "/page-038": FeatureFlags,
-  "/page-039": FeedbackSurvey,
-  "/page-040": GeoTargeting,
-  "/page-041": GoalTracking,
-  "/page-042": HirePipeline,
-  "/page-043": IncidentReport,
-  "/page-044": InventoryOverview,
-  "/page-045": InvestorUpdate,
-  "/page-046": InvoiceManager,
-  "/page-047": KpiDashboard,
-  "/page-048": LanguageDistribution,
-  "/page-049": LeadGeneration,
-  "/page-050": LeaveManagement,
-  "/page-051": LifetimeValue,
-  "/page-052": LoadTestResults,
-  "/page-053": MarketingCampaign,
-  "/page-054": NotificationCenter,
-  "/page-055": OrderTracking,
-  "/page-056": OrgChartViewer,
-  "/page-057": OsAnalytics,
-  "/page-058": OvertimeReport,
-  "/page-059": PageViewsHeatmap,
-  "/page-060": PartnerPortal,
-  "/page-061": PayrollSummary,
-  "/page-062": PerformanceMetrics,
-  "/page-063": PerformanceReview,
-  "/page-064": PipelineForecast,
-  "/page-065": PolicyLibrary,
-  "/page-066": ProcurementOrder,
-  "/page-067": ProductCatalog,
-  "/page-068": ProductRoadmap,
-  "/page-069": QualityControl,
-  "/page-070": QuarterlyForecast,
-  "/page-071": ReferralProgram,
-  "/page-072": RegionalSales,
-  "/page-073": ReleaseNotes,
-  "/page-074": ResellerDashboard,
-  "/page-075": ResourceAllocation,
-  "/page-076": RetentionCohorts,
-  "/page-077": ReturnManagement,
-  "/page-078": RevenueAnalysis,
-  "/page-079": RiskAssessment,
-  "/page-080": RolePermissions,
-  "/page-081": SalesReport,
-  "/page-082": SearchQueries,
-  "/page-083": SecurityAlerts,
-  "/page-084": SeoRankings,
-  "/page-085": ServerMonitoring,
-  "/page-086": ShiftScheduler,
-  "/page-087": ShippingDashboard,
-  "/page-088": SkillMatrix,
-  "/page-089": SocialMediaAnalytics,
-  "/page-090": SprintPlanner,
-  "/page-091": StakeholderMap,
-  "/page-092": StoreLocator,
-  "/page-093": SubscriptionPlans,
-  "/page-094": SuccessionPlanning,
-  "/page-095": SupportTickets,
-  "/page-096": SystemHealth,
-  "/page-097": TeamDirectory,
-  "/page-098": TimeOnSite,
-  "/page-099": TimesheetApproval,
-  "/page-100": TrafficSources,
-  "/page-101": TrainingModules,
-  "/page-102": UserManagement,
-  "/page-103": UserSessions,
-  "/page-104": VendorPortal,
-  "/page-105": VendorScorecard,
-  "/page-106": WarehouseMap,
-  "/page-107": WorkflowBuilder,
-  "/page-108": YearEndReview
-};
+// ── Page name → path mapping (generated) ──────────────────────────────────
+const PAGES: Array<{ path: string; name: string; file: string }> = [
+  { path: "/page-001", name: "ABTestResults",       file: "ABTestResults.ts" },
+  { path: "/page-002", name: "AdPerformance",       file: "AdPerformance.ts" },
+  { path: "/page-003", name: "AffiliateNetwork",     file: "AffiliateNetwork.ts" },
+  { path: "/page-004", name: "AnalyticsDashboard",   file: "AnalyticsDashboard.ts" },
+  { path: "/page-005", name: "ApiDocumentation",     file: "ApiDocumentation.ts" },
+  { path: "/page-006", name: "AssetManagement",      file: "AssetManagement.ts" },
+  { path: "/page-007", name: "AuditLogViewer",       file: "AuditLogViewer.ts" },
+  { path: "/page-008", name: "BackupRestore",        file: "BackupRestore.ts" },
+  { path: "/page-009", name: "BoardReport",          file: "BoardReport.ts" },
+  { path: "/page-010", name: "BounceRateAnalysis",   file: "BounceRateAnalysis.ts" },
+  { path: "/page-011", name: "BranchPerformance",    file: "BranchPerformance.ts" },
+  { path: "/page-012", name: "BrowserStats",         file: "BrowserStats.ts" },
+  { path: "/page-013", name: "BudgetPlanning",       file: "BudgetPlanning.ts" },
+  { path: "/page-014", name: "BugTracker",           file: "BugTracker.ts" },
+  { path: "/page-015", name: "BusinessContinuity",   file: "BusinessContinuity.ts" },
+  { path: "/page-016", name: "CacheAnalytics",       file: "CacheAnalytics.ts" },
+  { path: "/page-017", name: "ChatRoom",             file: "ChatRoom.ts" },
+  { path: "/page-018", name: "ChurnAnalysis",        file: "ChurnAnalysis.ts" },
+  { path: "/page-019", name: "CodeReviewQueue",      file: "CodeReviewQueue.ts" },
+  { path: "/page-020", name: "CommissionReport",     file: "CommissionReport.ts" },
+  { path: "/page-021", name: "ComplianceReport",     file: "ComplianceReport.ts" },
+  { path: "/page-022", name: "ContentManagement",    file: "ContentManagement.ts" },
+  { path: "/page-023", name: "ContractLibrary",      file: "ContractLibrary.ts" },
+  { path: "/page-024", name: "ContractRenewals",     file: "ContractRenewals.ts" },
+  { path: "/page-025", name: "ConversionFunnel",     file: "ConversionFunnel.ts" },
+  { path: "/page-026", name: "CustomerInsights",     file: "CustomerInsights.ts" },
+  { path: "/page-027", name: "CustomerSegments",     file: "CustomerSegments.ts" },
+  { path: "/page-028", name: "DataExport",           file: "DataExport.ts" },
+  { path: "/page-029", name: "DatabaseAdmin",        file: "DatabaseAdmin.ts" },
+  { path: "/page-030", name: "DealTracker",          file: "DealTracker.ts" },
+  { path: "/page-031", name: "DeploymentHistory",    file: "DeploymentHistory.ts" },
+  { path: "/page-032", name: "DeviceBreakdown",      file: "DeviceBreakdown.ts" },
+  { path: "/page-033", name: "DisasterRecovery",     file: "DisasterRecovery.ts" },
+  { path: "/page-034", name: "EmailCampaigns",       file: "EmailCampaigns.ts" },
+  { path: "/page-035", name: "EmployeeOnboarding",   file: "EmployeeOnboarding.ts" },
+  { path: "/page-036", name: "ExecutiveSummary",     file: "ExecutiveSummary.ts" },
+  { path: "/page-037", name: "ExpenseTracker",       file: "ExpenseTracker.ts" },
+  { path: "/page-038", name: "FeatureFlags",         file: "FeatureFlags.ts" },
+  { path: "/page-039", name: "FeedbackSurvey",       file: "FeedbackSurvey.ts" },
+  { path: "/page-040", name: "GeoTargeting",         file: "GeoTargeting.ts" },
+  { path: "/page-041", name: "GoalTracking",         file: "GoalTracking.ts" },
+  { path: "/page-042", name: "HirePipeline",         file: "HirePipeline.ts" },
+  { path: "/page-043", name: "IncidentReport",       file: "IncidentReport.ts" },
+  { path: "/page-044", name: "InventoryOverview",    file: "InventoryOverview.ts" },
+  { path: "/page-045", name: "InvestorUpdate",       file: "InvestorUpdate.ts" },
+  { path: "/page-046", name: "InvoiceManager",       file: "InvoiceManager.ts" },
+  { path: "/page-047", name: "KpiDashboard",         file: "KpiDashboard.ts" },
+  { path: "/page-048", name: "LanguageDistribution", file: "LanguageDistribution.ts" },
+  { path: "/page-049", name: "LeadGeneration",       file: "LeadGeneration.ts" },
+  { path: "/page-050", name: "LeaveManagement",      file: "LeaveManagement.ts" },
+  { path: "/page-051", name: "LifetimeValue",        file: "LifetimeValue.ts" },
+  { path: "/page-052", name: "LoadTestResults",      file: "LoadTestResults.ts" },
+  { path: "/page-053", name: "MarketingCampaign",    file: "MarketingCampaign.ts" },
+  { path: "/page-054", name: "NotificationCenter",   file: "NotificationCenter.ts" },
+  { path: "/page-055", name: "OrderTracking",        file: "OrderTracking.ts" },
+  { path: "/page-056", name: "OrgChartViewer",       file: "OrgChartViewer.ts" },
+  { path: "/page-057", name: "OsAnalytics",          file: "OsAnalytics.ts" },
+  { path: "/page-058", name: "OvertimeReport",       file: "OvertimeReport.ts" },
+  { path: "/page-059", name: "PageViewsHeatmap",     file: "PageViewsHeatmap.ts" },
+  { path: "/page-060", name: "PartnerPortal",        file: "PartnerPortal.ts" },
+  { path: "/page-061", name: "PayrollSummary",       file: "PayrollSummary.ts" },
+  { path: "/page-062", name: "PerformanceMetrics",   file: "PerformanceMetrics.ts" },
+  { path: "/page-063", name: "PerformanceReview",    file: "PerformanceReview.ts" },
+  { path: "/page-064", name: "PipelineForecast",     file: "PipelineForecast.ts" },
+  { path: "/page-065", name: "PolicyLibrary",        file: "PolicyLibrary.ts" },
+  { path: "/page-066", name: "ProcurementOrder",     file: "ProcurementOrder.ts" },
+  { path: "/page-067", name: "ProductCatalog",       file: "ProductCatalog.ts" },
+  { path: "/page-068", name: "ProductRoadmap",       file: "ProductRoadmap.ts" },
+  { path: "/page-069", name: "QualityControl",       file: "QualityControl.ts" },
+  { path: "/page-070", name: "QuarterlyForecast",    file: "QuarterlyForecast.ts" },
+  { path: "/page-071", name: "ReferralProgram",      file: "ReferralProgram.ts" },
+  { path: "/page-072", name: "RegionalSales",        file: "RegionalSales.ts" },
+  { path: "/page-073", name: "ReleaseNotes",         file: "ReleaseNotes.ts" },
+  { path: "/page-074", name: "ResellerDashboard",    file: "ResellerDashboard.ts" },
+  { path: "/page-075", name: "ResourceAllocation",   file: "ResourceAllocation.ts" },
+  { path: "/page-076", name: "RetentionCohorts",     file: "RetentionCohorts.ts" },
+  { path: "/page-077", name: "ReturnManagement",     file: "ReturnManagement.ts" },
+  { path: "/page-078", name: "RevenueAnalysis",      file: "RevenueAnalysis.ts" },
+  { path: "/page-079", name: "RiskAssessment",       file: "RiskAssessment.ts" },
+  { path: "/page-080", name: "RolePermissions",      file: "RolePermissions.ts" },
+  { path: "/page-081", name: "SalesReport",          file: "SalesReport.ts" },
+  { path: "/page-082", name: "SearchQueries",        file: "SearchQueries.ts" },
+  { path: "/page-083", name: "SecurityAlerts",       file: "SecurityAlerts.ts" },
+  { path: "/page-084", name: "SeoRankings",          file: "SeoRankings.ts" },
+  { path: "/page-085", name: "ServerMonitoring",     file: "ServerMonitoring.ts" },
+  { path: "/page-086", name: "ShiftScheduler",       file: "ShiftScheduler.ts" },
+  { path: "/page-087", name: "ShippingDashboard",    file: "ShippingDashboard.ts" },
+  { path: "/page-088", name: "SkillMatrix",          file: "SkillMatrix.ts" },
+  { path: "/page-089", name: "SocialMediaAnalytics", file: "SocialMediaAnalytics.ts" },
+  { path: "/page-090", name: "SprintPlanner",        file: "SprintPlanner.ts" },
+  { path: "/page-091", name: "StakeholderMap",       file: "StakeholderMap.ts" },
+  { path: "/page-092", name: "StoreLocator",         file: "StoreLocator.ts" },
+  { path: "/page-093", name: "SubscriptionPlans",    file: "SubscriptionPlans.ts" },
+  { path: "/page-094", name: "SuccessionPlanning",   file: "SuccessionPlanning.ts" },
+  { path: "/page-095", name: "SupportTickets",       file: "SupportTickets.ts" },
+  { path: "/page-096", name: "SystemHealth",         file: "SystemHealth.ts" },
+  { path: "/page-097", name: "TeamDirectory",        file: "TeamDirectory.ts" },
+  { path: "/page-098", name: "TimeOnSite",           file: "TimeOnSite.ts" },
+  { path: "/page-099", name: "TimesheetApproval",    file: "TimesheetApproval.ts" },
+  { path: "/page-100", name: "TrafficSources",       file: "TrafficSources.ts" },
+  { path: "/page-101", name: "TrainingModules",      file: "TrainingModules.ts" },
+  { path: "/page-102", name: "UserManagement",       file: "UserManagement.ts" },
+  { path: "/page-103", name: "UserSessions",         file: "UserSessions.ts" },
+  { path: "/page-104", name: "VendorPortal",         file: "VendorPortal.ts" },
+  { path: "/page-105", name: "VendorScorecard",      file: "VendorScorecard.ts" },
+  { path: "/page-106", name: "WarehouseMap",         file: "WarehouseMap.ts" },
+  { path: "/page-107", name: "WorkflowBuilder",      file: "WorkflowBuilder.ts" },
+  { path: "/page-108", name: "YearEndReview",        file: "YearEndReview.ts" },
+];
 
+// ── Landing / not-found page with navigable link grid ────────────────────
+const Landing = () => () => html`
+  <div style="font-family:system-ui;min-height:100vh;background:#f8f9fa;padding:2rem">
+    <div style="max-width:1100px;margin:0 auto">
+      <h1 style="font-size:2rem;margin:0 0 0.25rem;color:#1a1a2e">
+        Mates Heavy Benchmark
+      </h1>
+      <p style="color:#666;margin:0 0 2rem;font-size:0.95rem">
+        108 pages · 20 components each · 4 CSS files each — click any page to
+        navigate
+      </p>
+      <div style="
+        display:grid;
+        grid-template-columns:repeat(auto-fill,minmax(160px,1fr));
+        gap:0.5rem
+      ">
+        ${PAGES.map((p) => {
+          const num = p.path.slice(6); // "001" .. "108"
+          return html`
+            <button
+              @click=${(e: Event) => { e.preventDefault(); navigateTo(p.path); }}
+              style="
+                display:flex;align-items:center;gap:0.5rem;
+                padding:0.55rem 0.75rem;
+                border:1px solid #dee2e6;border-radius:6px;
+                background:#fff;color:#333;cursor:pointer;
+                font-size:0.85rem;font-family:inherit;
+                text-align:left;transition:all 0.15s
+              "
+              onmouseover="this.style.borderColor='#4a6cf7';this.style.boxShadow='0 0 0 2px rgba(74,108,247,.15)'"
+              onmouseout="this.style.borderColor='#dee2e6';this.style.boxShadow='none'"
+            >
+              <span style="
+                display:inline-flex;align-items:center;justify-content:center;
+                width:26px;height:26px;border-radius:4px;
+                background:#4a6cf7;color:#fff;font-size:0.7rem;font-weight:700;
+                flex-shrink:0
+              ">${num}</span>
+              <span style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap">
+                ${p.name.replace(/([A-Z])/g, " $1").trim()}
+              </span>
+            </button>
+          `;
+        })}
+      </div>
+    </div>
+  </div>
+`;
+
+// ── Build lazy routes ────────────────────────────────────────────────────
+const routes = PAGES.map((p) => ({
+  path: p.path,
+  component: async () => import(`./pages/${p.file}`),
+}));
+
+// ── App component ────────────────────────────────────────────────────────
 const App = () => {
-  const p = pathAtom();
-  console.log('[App] path:', p, 'found:', !!_pages[p]);
-  const C = _pages[p];
-  return C
-    ? () => x(C, {})
-    : () => html`<div style="font-family:system-ui;padding:3rem;text-align:center;background:#f8f9fa;min-height:100vh">
-        <h1 style="font-size:2rem;margin-bottom:0.5rem">Mates Heavy Benchmark</h1>
-        <p style="color:#666;margin-bottom:2rem">108 pages · 20 components each · 4 CSS files each</p>
-      </div>`;
+  return () => Router(routes, Landing)();
 };
 
 export default App;
