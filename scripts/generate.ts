@@ -98,17 +98,96 @@ return()=>html\`<div class="\${s.root}"><h3 class="\${s.h3}">${c.label}</h3><div
 }
 
 function uiComponents() {
-  for(const[i,c]of UI.entries()){
-    w(`client/components/ui/${c.id}.ts`,
-`import{html,asyncAction,stylesheet}from"mates";import type{Props}from"mates";import{${c.me}}from"mates-ui";import{getUiConfig}from"../../../server/api/ui-config.ts";
+  w(`client/components/ui/${UI[0].id}.ts`,
+`import{html,asyncAction,stylesheet}from"mates";import type{Props}from"mates";import{${UI[0].me}}from"mates-ui";import{getUiConfig}from"../../../server/api/ui-config.ts";
 const{css:cl,mount}=stylesheet();const s=cl({
 wr:{display:"flex",alignItems:"center",gap:"0.5rem",padding:"0.75rem 1rem",background:"white",borderRadius:"8px",boxShadow:"0 1px 3px rgba(0,0,0,0.08)"},
 lb:{fontSize:"0.85rem",color:"#666",fontWeight:500},
 st:{fontSize:"0.75rem",color:"#999"},
 });
-export const ${c.id}=(p:Props<{pageId:string}>)=>{mount();const{pageId}=p();const d=asyncAction(()=>getUiConfig({pageId,comp:${i}}));d();
-return()=>html\`<div class="\${s.wr}"><span class="\${s.lb}">${c.label}</span><\${${c.me}}>\${d.data()?.label??"\\u2026"}</\${${c.me}}><span class="\${s.st}">\${d.data()?.status??""}</span></div>\`;};`);
-  }
+export const ${UI[0].id}=(p:Props<{pageId:string}>)=>{mount();const{pageId}=p();const d=asyncAction(()=>getUiConfig({pageId,comp:0}));d();
+return()=>html`<div class="${s.wr}"><span class="${s.lb}">${UI[0].label}</span>${Button(d.data()?.label??"…",{variant:"filled",size:"sm"})}<span class="${s.st}">${d.data()?.status??""}</span></div>`;};`);
+  w(`client/components/ui/${UI[1].id}.ts`,
+`import{html,asyncAction,stylesheet}from"mates";import type{Props}from"mates";import{${UI[1].me}}from"mates-ui";import{getUiConfig}from"../../../server/api/ui-config.ts";
+const{css:cl,mount}=stylesheet();const s=cl({
+wr:{display:"flex",alignItems:"center",gap:"0.5rem",padding:"0.75rem 1rem",background:"white",borderRadius:"8px",boxShadow:"0 1px 3px rgba(0,0,0,0.08)"},
+lb:{fontSize:"0.85rem",color:"#666",fontWeight:500},
+st:{fontSize:"0.75rem",color:"#999"},
+});
+export const ${UI[1].id}=(p:Props<{pageId:string}>)=>{mount();const{pageId}=p();const d=asyncAction(()=>getUiConfig({pageId,comp:1}));d();
+return()=>html`<div class="${s.wr}"><span class="${s.lb}">${UI[1].label}</span>${Text(d.data()?.label??"…",{size:"md",color:"#333"})}<span class="${s.st}">${d.data()?.status??""}</span></div>`;};`);
+  w(`client/components/ui/${UI[2].id}.ts`,
+`import{html,asyncAction,stylesheet}from"mates";import type{Props}from"mates";import{${UI[2].me}}from"mates-ui";import{getUiConfig}from"../../../server/api/ui-config.ts";
+const{css:cl,mount}=stylesheet();const s=cl({
+wr:{display:"flex",alignItems:"center",gap:"0.5rem",padding:"0.75rem 1rem",background:"white",borderRadius:"8px",boxShadow:"0 1px 3px rgba(0,0,0,0.08)"},
+lb:{fontSize:"0.85rem",color:"#666",fontWeight:500},
+st:{fontSize:"0.75rem",color:"#999"},
+});
+export const ${UI[2].id}=(p:Props<{pageId:string}>)=>{mount();const{pageId}=p();const d=asyncAction(()=>getUiConfig({pageId,comp:2}));d();
+return()=>html`<div class="${s.wr}"><span class="${s.lb}">${UI[2].label}</span>${Card({variant:"outlined"},html`<p>${d.data()?.label??"…"}</p>`)}<span class="${s.st}">${d.data()?.status??""}</span></div>`;};`);
+  w(`client/components/ui/${UI[3].id}.ts`,
+`import{html,asyncAction,stylesheet}from"mates";import type{Props}from"mates";import{${UI[3].me}}from"mates-ui";import{getUiConfig}from"../../../server/api/ui-config.ts";
+const{css:cl,mount}=stylesheet();const s=cl({
+wr:{display:"flex",alignItems:"center",gap:"0.5rem",padding:"0.75rem 1rem",background:"white",borderRadius:"8px",boxShadow:"0 1px 3px rgba(0,0,0,0.08)"},
+lb:{fontSize:"0.85rem",color:"#666",fontWeight:500},
+st:{fontSize:"0.75rem",color:"#999"},
+});
+export const ${UI[3].id}=(p:Props<{pageId:string}>)=>{mount();const{pageId}=p();const d=asyncAction(()=>getUiConfig({pageId,comp:3}));d();
+return()=>html`<div class="${s.wr}"><span class="${s.lb}">${UI[3].label}</span>${Badge(d.data()?.status??"…",{color:"primary"})}<span class="${s.st}">${d.data()?.status??""}</span></div>`;};`);
+  w(`client/components/ui/${UI[4].id}.ts`,
+`import{html,asyncAction,stylesheet}from"mates";import type{Props}from"mates";import{${UI[4].me}}from"mates-ui";import{getUiConfig}from"../../../server/api/ui-config.ts";
+const{css:cl,mount}=stylesheet();const s=cl({
+wr:{display:"flex",alignItems:"center",gap:"0.5rem",padding:"0.75rem 1rem",background:"white",borderRadius:"8px",boxShadow:"0 1px 3px rgba(0,0,0,0.08)"},
+lb:{fontSize:"0.85rem",color:"#666",fontWeight:500},
+st:{fontSize:"0.75rem",color:"#999"},
+});
+export const ${UI[4].id}=(p:Props<{pageId:string}>)=>{mount();const{pageId}=p();const d=asyncAction(()=>getUiConfig({pageId,comp:4}));d();
+return()=>html`<div class="${s.wr}"><span class="${s.lb}">${UI[4].label}</span>${Chip({label:d.data()?.label??"…",variant:"outlined"})}<span class="${s.st}">${d.data()?.status??""}</span></div>`;};`);
+  w(`client/components/ui/${UI[5].id}.ts`,
+`import{html,asyncAction,stylesheet}from"mates";import type{Props}from"mates";import{${UI[5].me}}from"mates-ui";import{getUiConfig}from"../../../server/api/ui-config.ts";
+const{css:cl,mount}=stylesheet();const s=cl({
+wr:{display:"flex",alignItems:"center",gap:"0.5rem",padding:"0.75rem 1rem",background:"white",borderRadius:"8px",boxShadow:"0 1px 3px rgba(0,0,0,0.08)"},
+lb:{fontSize:"0.85rem",color:"#666",fontWeight:500},
+st:{fontSize:"0.75rem",color:"#999"},
+});
+export const ${UI[5].id}=(p:Props<{pageId:string}>)=>{mount();const{pageId}=p();const d=asyncAction(()=>getUiConfig({pageId,comp:5}));d();
+return()=>html`<div class="${s.wr}"><span class="${s.lb}">${UI[5].label}</span>${Spinner({size:"sm"})}<span class="${s.st}">${d.data()?.status??""}</span></div>`;};`);
+  w(`client/components/ui/${UI[6].id}.ts`,
+`import{html,asyncAction,stylesheet}from"mates";import type{Props}from"mates";import{${UI[6].me}}from"mates-ui";import{getUiConfig}from"../../../server/api/ui-config.ts";
+const{css:cl,mount}=stylesheet();const s=cl({
+wr:{display:"flex",alignItems:"center",gap:"0.5rem",padding:"0.75rem 1rem",background:"white",borderRadius:"8px",boxShadow:"0 1px 3px rgba(0,0,0,0.08)"},
+lb:{fontSize:"0.85rem",color:"#666",fontWeight:500},
+st:{fontSize:"0.75rem",color:"#999"},
+});
+export const ${UI[6].id}=(p:Props<{pageId:string}>)=>{mount();const{pageId}=p();const d=asyncAction(()=>getUiConfig({pageId,comp:6}));d();
+return()=>html`<div class="${s.wr}"><span class="${s.lb}">${UI[6].label}</span>${Switch({checked:d.data()?.label==="on",disabled:!1})}<span class="${s.st}">${d.data()?.status??""}</span></div>`;};`);
+  w(`client/components/ui/${UI[7].id}.ts`,
+`import{html,asyncAction,stylesheet}from"mates";import type{Props}from"mates";import{${UI[7].me}}from"mates-ui";import{getUiConfig}from"../../../server/api/ui-config.ts";
+const{css:cl,mount}=stylesheet();const s=cl({
+wr:{display:"flex",alignItems:"center",gap:"0.5rem",padding:"0.75rem 1rem",background:"white",borderRadius:"8px",boxShadow:"0 1px 3px rgba(0,0,0,0.08)"},
+lb:{fontSize:"0.85rem",color:"#666",fontWeight:500},
+st:{fontSize:"0.75rem",color:"#999"},
+});
+export const ${UI[7].id}=(p:Props<{pageId:string}>)=>{mount();const{pageId}=p();const d=asyncAction(()=>getUiConfig({pageId,comp:7}));d();
+return()=>html`<div class="${s.wr}"><span class="${s.lb}">${UI[7].label}</span>${LinearProgress({value:65})}<span class="${s.st}">${d.data()?.status??""}</span></div>`;};`);
+  w(`client/components/ui/${UI[8].id}.ts`,
+`import{html,asyncAction,stylesheet}from"mates";import type{Props}from"mates";import{${UI[8].me}}from"mates-ui";import{getUiConfig}from"../../../server/api/ui-config.ts";
+const{css:cl,mount}=stylesheet();const s=cl({
+wr:{display:"flex",alignItems:"center",gap:"0.5rem",padding:"0.75rem 1rem",background:"white",borderRadius:"8px",boxShadow:"0 1px 3px rgba(0,0,0,0.08)"},
+lb:{fontSize:"0.85rem",color:"#666",fontWeight:500},
+st:{fontSize:"0.75rem",color:"#999"},
+});
+export const ${UI[8].id}=(p:Props<{pageId:string}>)=>{mount();const{pageId}=p();const d=asyncAction(()=>getUiConfig({pageId,comp:8}));d();
+return()=>html`<div class="${s.wr}"><span class="${s.lb}">${UI[8].label}</span>${Skeleton({width:"120px",height:"1.25rem"})}<span class="${s.st}">${d.data()?.status??""}</span></div>`;};`);
+  w(`client/components/ui/${UI[9].id}.ts`,
+`import{html,asyncAction,stylesheet}from"mates";import type{Props}from"mates";import{${UI[9].me}}from"mates-ui";import{getUiConfig}from"../../../server/api/ui-config.ts";
+const{css:cl,mount}=stylesheet();const s=cl({
+wr:{display:"flex",alignItems:"center",gap:"0.5rem",padding:"0.75rem 1rem",background:"white",borderRadius:"8px",boxShadow:"0 1px 3px rgba(0,0,0,0.08)"},
+lb:{fontSize:"0.85rem",color:"#666",fontWeight:500},
+st:{fontSize:"0.75rem",color:"#999"},
+});
+export const ${UI[9].id}=(p:Props<{pageId:string}>)=>{mount();const{pageId}=p();const d=asyncAction(()=>getUiConfig({pageId,comp:9}));d();
+return()=>html`<div class="${s.wr}"><span class="${s.lb}">${UI[9].label}</span>${Icon("check_circle",{size:"md"})}<span class="${s.st}">${d.data()?.status??""}</span></div>`;};`);
 }
 
 function pages() {

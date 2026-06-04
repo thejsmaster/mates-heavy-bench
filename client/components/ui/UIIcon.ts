@@ -5,4 +5,4 @@ lb:{fontSize:"0.85rem",color:"#666",fontWeight:500},
 st:{fontSize:"0.75rem",color:"#999"},
 });
 export const UIIcon=(p:Props<{pageId:string}>)=>{mount();const{pageId}=p();const d=asyncAction(()=>getUiConfig({pageId,comp:9}));d();
-return()=>html`<div class="${s.wr}"><span class="${s.lb}">Icon Display</span><${Icon}>${d.data()?.label??"\u2026"}</${Icon}><span class="${s.st}">${d.data()?.status??""}</span></div>`;};
+return()=>html`<div class="${s.wr}"><span class="${s.lb}">Icon Display</span>${Icon("check_circle",{size:"md"})}<span class="${s.st}">${d.data()?.status??""}</span></div>`;};

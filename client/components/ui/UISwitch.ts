@@ -5,4 +5,4 @@ lb:{fontSize:"0.85rem",color:"#666",fontWeight:500},
 st:{fontSize:"0.75rem",color:"#999"},
 });
 export const UISwitch=(p:Props<{pageId:string}>)=>{mount();const{pageId}=p();const d=asyncAction(()=>getUiConfig({pageId,comp:6}));d();
-return()=>html`<div class="${s.wr}"><span class="${s.lb}">Toggle Switch</span><${Switch}>${d.data()?.label??"\u2026"}</${Switch}><span class="${s.st}">${d.data()?.status??""}</span></div>`;};
+return()=>html`<div class="${s.wr}"><span class="${s.lb}">Toggle Switch</span>${Switch({checked:d.data()?.label==="on",disabled:!1})}<span class="${s.st}">${d.data()?.status??""}</span></div>`;};

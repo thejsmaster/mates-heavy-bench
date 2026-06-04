@@ -5,4 +5,4 @@ lb:{fontSize:"0.85rem",color:"#666",fontWeight:500},
 st:{fontSize:"0.75rem",color:"#999"},
 });
 export const UIChip=(p:Props<{pageId:string}>)=>{mount();const{pageId}=p();const d=asyncAction(()=>getUiConfig({pageId,comp:4}));d();
-return()=>html`<div class="${s.wr}"><span class="${s.lb}">Filter Chip</span><${Chip}>${d.data()?.label??"\u2026"}</${Chip}><span class="${s.st}">${d.data()?.status??""}</span></div>`;};
+return()=>html`<div class="${s.wr}"><span class="${s.lb}">Filter Chip</span>${Chip({label:d.data()?.label??"…",variant:"outlined"})}<span class="${s.st}">${d.data()?.status??""}</span></div>`;};
