@@ -169,7 +169,6 @@ const routes = PAGES.map((p) => ({
 let count = 0; 
 // ── App component ────────────────────────────────────────────────────────
 const App = () => {
-    console.log(count++);
   return () => Router(routes, Landing)();
 };
 
