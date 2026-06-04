@@ -235,3 +235,6 @@ const App = () => {
 };
 
 export { App };
+
+// Module-level counter to test import caching
+let _counter = 0;
