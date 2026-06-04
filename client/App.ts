@@ -23,6 +23,7 @@ import { ComplianceReport } from "./pages/ComplianceReport.ts";
 import { ContentManagement } from "./pages/ContentManagement.ts";
 import { ContractLibrary } from "./pages/ContractLibrary.ts";
 import { ContractRenewals } from "./pages/ContractRenewals.ts";
+import { ChatRoom } from "./pages/ChatRoom.ts";
 import { ConversionFunnel } from "./pages/ConversionFunnel.ts";
 import { CustomerInsights } from "./pages/CustomerInsights.ts";
 import { CustomerSegments } from "./pages/CustomerSegments.ts";
