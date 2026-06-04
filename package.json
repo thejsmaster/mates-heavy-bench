@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "mates": "^0.4.0-beta.2",
-    "mates-fullstack": "^1.0.0-beta.36",
+    "mates-fullstack": "^1.0.0-beta.37",
     "mates-ui": "*"
   },
   "devDependencies": {
