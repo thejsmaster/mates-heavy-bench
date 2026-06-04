@@ -1,0 +1,1 @@
+export async function getActivity(p:{pageId:string}){return{value:"247 events",meta:"3h ago",_page:p.pageId}}

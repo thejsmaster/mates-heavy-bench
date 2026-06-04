@@ -1,0 +1,1 @@
+export async function getMetrics(p:{pageId:string}){return{value:"87.3%",meta:"7d trend",_page:p.pageId}}

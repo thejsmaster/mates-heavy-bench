@@ -1,0 +1,1 @@
+export async function getStatus(p:{pageId:string}){return{value:"Online",meta:"99.9%",_page:p.pageId}}

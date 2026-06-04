@@ -1,0 +1,1 @@
+export async function getUiConfig(p:{pageId:string;comp:number}){return{label:"v2.4",status:"ready",_page:p.pageId,_comp:p.comp}}

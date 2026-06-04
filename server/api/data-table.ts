@@ -1,0 +1,1 @@
+export async function getDataTable(p:{pageId:string}){return{value:"3,421 rows",meta:"12m ago",_page:p.pageId}}

@@ -1,0 +1,1 @@
+export async function getProductInfo(p:{pageId:string}){return{value:"SKU-74291",meta:"$249.99",_page:p.pageId}}

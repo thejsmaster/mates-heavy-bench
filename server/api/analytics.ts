@@ -1,0 +1,1 @@
+export async function getAnalytics(p:{pageId:string}){return{value:"742.3",meta:"+15.2%",_page:p.pageId}}

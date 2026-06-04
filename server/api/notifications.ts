@@ -1,0 +1,1 @@
+export async function getNotifications(p:{pageId:string}){return{value:"18 alerts",meta:"3 new",_page:p.pageId}}

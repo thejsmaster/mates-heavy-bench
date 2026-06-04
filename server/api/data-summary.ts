@@ -1,0 +1,1 @@
+export async function getDataSummary(p:{pageId:string}){return{value:"8,472",meta:"+12%",_page:p.pageId}}

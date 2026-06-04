@@ -1,0 +1,1 @@
+export async function getDetail(p:{pageId:string}){return{value:"#48291",meta:"High",_page:p.pageId}}

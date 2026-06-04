@@ -1,0 +1,1 @@
+export async function getUserProfile(p:{pageId:string}){return{value:"User #483",meta:"32 acts",_page:p.pageId}}
