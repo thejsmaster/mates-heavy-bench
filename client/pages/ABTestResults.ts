@@ -21,7 +21,7 @@ import{UIProgress}from"../components/ui/UIProgress.ts";
 import{UISkeleton}from"../components/ui/UISkeleton.ts";
 import{UIIcon}from"../components/ui/UIIcon.ts";
 export const ABTestResults=(_p:Props<{}>)=>()=>html`<div class="page-container">
-<div class="page-header"><h1 style="color:hsl(164,65%,53%)">ABTest Results</h1><p>Manage abtest results.</p></div>
+<div class="page-header"><h1 style="color:hsl(164,65%,53%)"> Results</h1><p>Manage abtest results.</p></div>
 <div class="component-column">
 <div class="api-card">${x(DataSummaryCard,{pageId:"page-023"})}</div>
 <div class="api-card">${x(ProductInfoPanel,{pageId:"page-023"})}</div>
