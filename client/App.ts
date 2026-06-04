@@ -166,9 +166,10 @@ const routes = PAGES.map((p) => ({
   path: p.path,
   component: async () => import(`./pages/${p.file}`),
 }));
-
+let count = 0; 
 // ── App component ────────────────────────────────────────────────────────
 const App = () => {
+    console.log(count++);
   return () => Router(routes, Landing)();
 };
 
