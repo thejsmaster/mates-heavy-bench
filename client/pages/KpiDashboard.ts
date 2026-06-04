@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-087"})}
 ${x(UIProgress,{pageId:"page-087"})}
 ${x(UIIcon,{pageId:"page-087"})}
 </div></div></div></div>`;
+export default KpiDashboard;

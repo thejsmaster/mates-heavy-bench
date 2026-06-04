@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-016"})}
 ${x(UIProgress,{pageId:"page-016"})}
 ${x(UIIcon,{pageId:"page-016"})}
 </div></div></div></div>`;
+export default SystemHealth;

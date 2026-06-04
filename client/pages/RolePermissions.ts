@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-018"})}
 ${x(UIProgress,{pageId:"page-018"})}
 ${x(UIIcon,{pageId:"page-018"})}
 </div></div></div></div>`;
+export default RolePermissions;

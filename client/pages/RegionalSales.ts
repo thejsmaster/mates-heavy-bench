@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-083"})}
 ${x(UIProgress,{pageId:"page-083"})}
 ${x(UIIcon,{pageId:"page-083"})}
 </div></div></div></div>`;
+export default RegionalSales;

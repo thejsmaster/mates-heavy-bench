@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-103"})}
 ${x(UIProgress,{pageId:"page-103"})}
 ${x(UIIcon,{pageId:"page-103"})}
 </div></div></div></div>`;
+export default IncidentReport;

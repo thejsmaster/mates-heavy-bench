@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-007"})}
 ${x(UIProgress,{pageId:"page-007"})}
 ${x(UIIcon,{pageId:"page-007"})}
 </div></div></div></div>`;
+export default SalesReport;

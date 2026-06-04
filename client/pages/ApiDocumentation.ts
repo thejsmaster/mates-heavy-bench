@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-021"})}
 ${x(UIProgress,{pageId:"page-021"})}
 ${x(UIIcon,{pageId:"page-021"})}
 </div></div></div></div>`;
+export default ApiDocumentation;

@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-040"})}
 ${x(UIProgress,{pageId:"page-040"})}
 ${x(UIIcon,{pageId:"page-040"})}
 </div></div></div></div>`;
+export default ReturnManagement;

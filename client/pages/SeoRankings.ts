@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-043"})}
 ${x(UIProgress,{pageId:"page-043"})}
 ${x(UIIcon,{pageId:"page-043"})}
 </div></div></div></div>`;
+export default SeoRankings;

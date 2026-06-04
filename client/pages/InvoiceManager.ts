@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-029"})}
 ${x(UIProgress,{pageId:"page-029"})}
 ${x(UIIcon,{pageId:"page-029"})}
 </div></div></div></div>`;
+export default InvoiceManager;

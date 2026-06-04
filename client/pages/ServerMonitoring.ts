@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-057"})}
 ${x(UIProgress,{pageId:"page-057"})}
 ${x(UIIcon,{pageId:"page-057"})}
 </div></div></div></div>`;
+export default ServerMonitoring;

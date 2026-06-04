@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-085"})}
 ${x(UIProgress,{pageId:"page-085"})}
 ${x(UIIcon,{pageId:"page-085"})}
 </div></div></div></div>`;
+export default YearEndReview;

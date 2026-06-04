@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-101"})}
 ${x(UIProgress,{pageId:"page-101"})}
 ${x(UIIcon,{pageId:"page-101"})}
 </div></div></div></div>`;
+export default OrgChartViewer;

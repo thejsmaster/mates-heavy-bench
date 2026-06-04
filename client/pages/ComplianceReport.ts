@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-025"})}
 ${x(UIProgress,{pageId:"page-025"})}
 ${x(UIIcon,{pageId:"page-025"})}
 </div></div></div></div>`;
+export default ComplianceReport;

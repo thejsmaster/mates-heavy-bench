@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-053"})}
 ${x(UIProgress,{pageId:"page-053"})}
 ${x(UIIcon,{pageId:"page-053"})}
 </div></div></div></div>`;
+export default BugTracker;

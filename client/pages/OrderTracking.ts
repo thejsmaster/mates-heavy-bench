@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-004"})}
 ${x(UIProgress,{pageId:"page-004"})}
 ${x(UIIcon,{pageId:"page-004"})}
 </div></div></div></div>`;
+export default OrderTracking;

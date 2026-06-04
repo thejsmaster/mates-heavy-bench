@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-003"})}
 ${x(UIProgress,{pageId:"page-003"})}
 ${x(UIIcon,{pageId:"page-003"})}
 </div></div></div></div>`;
+export default ProductCatalog;

@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-041"})}
 ${x(UIProgress,{pageId:"page-041"})}
 ${x(UIIcon,{pageId:"page-041"})}
 </div></div></div></div>`;
+export default SocialMediaAnalytics;

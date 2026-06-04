@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-088"})}
 ${x(UIProgress,{pageId:"page-088"})}
 ${x(UIIcon,{pageId:"page-088"})}
 </div></div></div></div>`;
+export default ExecutiveSummary;

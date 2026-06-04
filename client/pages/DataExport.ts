@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-024"})}
 ${x(UIProgress,{pageId:"page-024"})}
 ${x(UIIcon,{pageId:"page-024"})}
 </div></div></div></div>`;
+export default DataExport;

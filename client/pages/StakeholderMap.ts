@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-091"})}
 ${x(UIProgress,{pageId:"page-091"})}
 ${x(UIIcon,{pageId:"page-091"})}
 </div></div></div></div>`;
+export default StakeholderMap;

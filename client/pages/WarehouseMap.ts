@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-038"})}
 ${x(UIProgress,{pageId:"page-038"})}
 ${x(UIIcon,{pageId:"page-038"})}
 </div></div></div></div>`;
+export default WarehouseMap;

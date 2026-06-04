@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-047"})}
 ${x(UIProgress,{pageId:"page-047"})}
 ${x(UIIcon,{pageId:"page-047"})}
 </div></div></div></div>`;
+export default DealTracker;

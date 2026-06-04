@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-060"})}
 ${x(UIProgress,{pageId:"page-060"})}
 ${x(UIIcon,{pageId:"page-060"})}
 </div></div></div></div>`;
+export default SecurityAlerts;

@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-096"})}
 ${x(UIProgress,{pageId:"page-096"})}
 ${x(UIIcon,{pageId:"page-096"})}
 </div></div></div></div>`;
+export default OvertimeReport;

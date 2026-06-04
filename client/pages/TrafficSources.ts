@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-067"})}
 ${x(UIProgress,{pageId:"page-067"})}
 ${x(UIIcon,{pageId:"page-067"})}
 </div></div></div></div>`;
+export default TrafficSources;

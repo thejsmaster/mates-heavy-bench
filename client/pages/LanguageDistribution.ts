@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-072"})}
 ${x(UIProgress,{pageId:"page-072"})}
 ${x(UIIcon,{pageId:"page-072"})}
 </div></div></div></div>`;
+export default LanguageDistribution;

@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-048"})}
 ${x(UIProgress,{pageId:"page-048"})}
 ${x(UIIcon,{pageId:"page-048"})}
 </div></div></div></div>`;
+export default CommissionReport;

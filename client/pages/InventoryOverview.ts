@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-005"})}
 ${x(UIProgress,{pageId:"page-005"})}
 ${x(UIIcon,{pageId:"page-005"})}
 </div></div></div></div>`;
+export default InventoryOverview;

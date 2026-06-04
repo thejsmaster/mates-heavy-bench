@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-051"})}
 ${x(UIProgress,{pageId:"page-051"})}
 ${x(UIIcon,{pageId:"page-051"})}
 </div></div></div></div>`;
+export default ProductRoadmap;

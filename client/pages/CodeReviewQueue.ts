@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-055"})}
 ${x(UIProgress,{pageId:"page-055"})}
 ${x(UIIcon,{pageId:"page-055"})}
 </div></div></div></div>`;
+export default CodeReviewQueue;

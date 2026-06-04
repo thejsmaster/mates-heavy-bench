@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-058"})}
 ${x(UIProgress,{pageId:"page-058"})}
 ${x(UIIcon,{pageId:"page-058"})}
 </div></div></div></div>`;
+export default DatabaseAdmin;

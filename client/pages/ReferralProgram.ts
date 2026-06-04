@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-077"})}
 ${x(UIProgress,{pageId:"page-077"})}
 ${x(UIIcon,{pageId:"page-077"})}
 </div></div></div></div>`;
+export default ReferralProgram;

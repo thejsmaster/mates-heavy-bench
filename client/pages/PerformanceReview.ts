@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-098"})}
 ${x(UIProgress,{pageId:"page-098"})}
 ${x(UIIcon,{pageId:"page-098"})}
 </div></div></div></div>`;
+export default PerformanceReview;

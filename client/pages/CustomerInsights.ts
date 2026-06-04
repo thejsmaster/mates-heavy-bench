@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-006"})}
 ${x(UIProgress,{pageId:"page-006"})}
 ${x(UIIcon,{pageId:"page-006"})}
 </div></div></div></div>`;
+export default CustomerInsights;

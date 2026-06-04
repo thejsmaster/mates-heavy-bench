@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-031"})}
 ${x(UIProgress,{pageId:"page-031"})}
 ${x(UIIcon,{pageId:"page-031"})}
 </div></div></div></div>`;
+export default EmployeeOnboarding;

@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-092"})}
 ${x(UIProgress,{pageId:"page-092"})}
 ${x(UIIcon,{pageId:"page-092"})}
 </div></div></div></div>`;
+export default ResourceAllocation;

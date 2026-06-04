@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-086"})}
 ${x(UIProgress,{pageId:"page-086"})}
 ${x(UIIcon,{pageId:"page-086"})}
 </div></div></div></div>`;
+export default GoalTracking;

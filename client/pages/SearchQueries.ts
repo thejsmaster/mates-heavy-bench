@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-063"})}
 ${x(UIProgress,{pageId:"page-063"})}
 ${x(UIIcon,{pageId:"page-063"})}
 </div></div></div></div>`;
+export default SearchQueries;

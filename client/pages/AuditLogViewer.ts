@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-017"})}
 ${x(UIProgress,{pageId:"page-017"})}
 ${x(UIIcon,{pageId:"page-017"})}
 </div></div></div></div>`;
+export default AuditLogViewer;

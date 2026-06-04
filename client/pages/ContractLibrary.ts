@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-035"})}
 ${x(UIProgress,{pageId:"page-035"})}
 ${x(UIIcon,{pageId:"page-035"})}
 </div></div></div></div>`;
+export default ContractLibrary;

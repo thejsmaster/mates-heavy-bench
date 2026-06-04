@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-012"})}
 ${x(UIProgress,{pageId:"page-012"})}
 ${x(UIIcon,{pageId:"page-012"})}
 </div></div></div></div>`;
+export default ContentManagement;

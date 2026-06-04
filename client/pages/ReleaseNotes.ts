@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-054"})}
 ${x(UIProgress,{pageId:"page-054"})}
 ${x(UIIcon,{pageId:"page-054"})}
 </div></div></div></div>`;
+export default ReleaseNotes;

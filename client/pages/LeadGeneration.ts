@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-045"})}
 ${x(UIProgress,{pageId:"page-045"})}
 ${x(UIIcon,{pageId:"page-045"})}
 </div></div></div></div>`;
+export default LeadGeneration;

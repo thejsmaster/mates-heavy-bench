@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-093"})}
 ${x(UIProgress,{pageId:"page-093"})}
 ${x(UIIcon,{pageId:"page-093"})}
 </div></div></div></div>`;
+export default TimesheetApproval;

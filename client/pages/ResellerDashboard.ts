@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-080"})}
 ${x(UIProgress,{pageId:"page-080"})}
 ${x(UIIcon,{pageId:"page-080"})}
 </div></div></div></div>`;
+export default ResellerDashboard;

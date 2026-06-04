@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-070"})}
 ${x(UIProgress,{pageId:"page-070"})}
 ${x(UIIcon,{pageId:"page-070"})}
 </div></div></div></div>`;
+export default BrowserStats;

@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-081"})}
 ${x(UIProgress,{pageId:"page-081"})}
 ${x(UIIcon,{pageId:"page-081"})}
 </div></div></div></div>`;
+export default StoreLocator;

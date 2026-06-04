@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-034"})}
 ${x(UIProgress,{pageId:"page-034"})}
 ${x(UIIcon,{pageId:"page-034"})}
 </div></div></div></div>`;
+export default VendorPortal;

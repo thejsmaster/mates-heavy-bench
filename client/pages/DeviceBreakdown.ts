@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-069"})}
 ${x(UIProgress,{pageId:"page-069"})}
 ${x(UIIcon,{pageId:"page-069"})}
 </div></div></div></div>`;
+export default DeviceBreakdown;

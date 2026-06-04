@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-062"})}
 ${x(UIProgress,{pageId:"page-062"})}
 ${x(UIIcon,{pageId:"page-062"})}
 </div></div></div></div>`;
+export default CacheAnalytics;

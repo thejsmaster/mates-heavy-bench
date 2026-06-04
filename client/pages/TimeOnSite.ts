@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-073"})}
 ${x(UIProgress,{pageId:"page-073"})}
 ${x(UIIcon,{pageId:"page-073"})}
 </div></div></div></div>`;
+export default TimeOnSite;

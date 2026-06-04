@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-046"})}
 ${x(UIProgress,{pageId:"page-046"})}
 ${x(UIIcon,{pageId:"page-046"})}
 </div></div></div></div>`;
+export default PipelineForecast;

@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-049"})}
 ${x(UIProgress,{pageId:"page-049"})}
 ${x(UIIcon,{pageId:"page-049"})}
 </div></div></div></div>`;
+export default CustomerSegments;

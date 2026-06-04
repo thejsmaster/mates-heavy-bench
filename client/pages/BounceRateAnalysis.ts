@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-074"})}
 ${x(UIProgress,{pageId:"page-074"})}
 ${x(UIIcon,{pageId:"page-074"})}
 </div></div></div></div>`;
+export default BounceRateAnalysis;

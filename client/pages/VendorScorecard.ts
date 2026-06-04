@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-106"})}
 ${x(UIProgress,{pageId:"page-106"})}
 ${x(UIIcon,{pageId:"page-106"})}
 </div></div></div></div>`;
+export default VendorScorecard;

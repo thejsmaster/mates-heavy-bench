@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-037"})}
 ${x(UIProgress,{pageId:"page-037"})}
 ${x(UIIcon,{pageId:"page-037"})}
 </div></div></div></div>`;
+export default ShippingDashboard;

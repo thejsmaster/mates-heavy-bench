@@ -221,6 +221,7 @@ const _pages: Record<string, any> = {
 
 const App = () => {
   const p = pathAtom();
+  console.log('[App] path:', p, 'found:', !!_pages[p]);
   const C = _pages[p];
   return C
     ? () => x(C, {})
@@ -230,4 +231,4 @@ const App = () => {
       </div>`;
 };
 
-export { App };
+export default App;

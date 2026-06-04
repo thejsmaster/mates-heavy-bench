@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-033"})}
 ${x(UIProgress,{pageId:"page-033"})}
 ${x(UIIcon,{pageId:"page-033"})}
 </div></div></div></div>`;
+export default AssetManagement;

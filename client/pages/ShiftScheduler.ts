@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-095"})}
 ${x(UIProgress,{pageId:"page-095"})}
 ${x(UIIcon,{pageId:"page-095"})}
 </div></div></div></div>`;
+export default ShiftScheduler;

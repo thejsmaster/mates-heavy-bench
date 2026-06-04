@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-019"})}
 ${x(UIProgress,{pageId:"page-019"})}
 ${x(UIIcon,{pageId:"page-019"})}
 </div></div></div></div>`;
+export default NotificationCenter;

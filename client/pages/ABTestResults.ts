@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-023"})}
 ${x(UIProgress,{pageId:"page-023"})}
 ${x(UIIcon,{pageId:"page-023"})}
 </div></div></div></div>`;
+export default ABTestResults;

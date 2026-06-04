@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-052"})}
 ${x(UIProgress,{pageId:"page-052"})}
 ${x(UIIcon,{pageId:"page-052"})}
 </div></div></div></div>`;
+export default SprintPlanner;

@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-082"})}
 ${x(UIProgress,{pageId:"page-082"})}
 ${x(UIIcon,{pageId:"page-082"})}
 </div></div></div></div>`;
+export default BranchPerformance;

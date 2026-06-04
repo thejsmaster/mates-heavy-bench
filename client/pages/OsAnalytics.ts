@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-071"})}
 ${x(UIProgress,{pageId:"page-071"})}
 ${x(UIIcon,{pageId:"page-071"})}
 </div></div></div></div>`;
+export default OsAnalytics;

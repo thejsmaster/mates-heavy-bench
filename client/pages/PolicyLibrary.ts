@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-102"})}
 ${x(UIProgress,{pageId:"page-102"})}
 ${x(UIIcon,{pageId:"page-102"})}
 </div></div></div></div>`;
+export default PolicyLibrary;

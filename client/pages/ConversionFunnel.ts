@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-066"})}
 ${x(UIProgress,{pageId:"page-066"})}
 ${x(UIIcon,{pageId:"page-066"})}
 </div></div></div></div>`;
+export default ConversionFunnel;

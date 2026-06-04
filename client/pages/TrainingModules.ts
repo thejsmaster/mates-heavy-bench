@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-032"})}
 ${x(UIProgress,{pageId:"page-032"})}
 ${x(UIIcon,{pageId:"page-032"})}
 </div></div></div></div>`;
+export default TrainingModules;

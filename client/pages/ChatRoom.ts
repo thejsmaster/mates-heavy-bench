@@ -199,3 +199,5 @@ export const ChatRoom = (_p: Props<{}>) => {
     </div>
   `;
 };
+
+export default ChatRoom;

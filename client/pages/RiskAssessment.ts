@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-026"})}
 ${x(UIProgress,{pageId:"page-026"})}
 ${x(UIIcon,{pageId:"page-026"})}
 </div></div></div></div>`;
+export default RiskAssessment;

@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-039"})}
 ${x(UIProgress,{pageId:"page-039"})}
 ${x(UIIcon,{pageId:"page-039"})}
 </div></div></div></div>`;
+export default QualityControl;

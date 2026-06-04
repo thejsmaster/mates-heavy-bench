@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-068"})}
 ${x(UIProgress,{pageId:"page-068"})}
 ${x(UIIcon,{pageId:"page-068"})}
 </div></div></div></div>`;
+export default GeoTargeting;

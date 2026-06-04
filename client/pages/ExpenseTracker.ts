@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-028"})}
 ${x(UIProgress,{pageId:"page-028"})}
 ${x(UIIcon,{pageId:"page-028"})}
 </div></div></div></div>`;
+export default ExpenseTracker;

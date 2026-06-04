@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-078"})}
 ${x(UIProgress,{pageId:"page-078"})}
 ${x(UIIcon,{pageId:"page-078"})}
 </div></div></div></div>`;
+export default AffiliateNetwork;

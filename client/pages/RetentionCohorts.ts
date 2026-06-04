@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-075"})}
 ${x(UIProgress,{pageId:"page-075"})}
 ${x(UIIcon,{pageId:"page-075"})}
 </div></div></div></div>`;
+export default RetentionCohorts;

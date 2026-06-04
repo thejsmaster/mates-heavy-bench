@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-036"})}
 ${x(UIProgress,{pageId:"page-036"})}
 ${x(UIIcon,{pageId:"page-036"})}
 </div></div></div></div>`;
+export default ProcurementOrder;

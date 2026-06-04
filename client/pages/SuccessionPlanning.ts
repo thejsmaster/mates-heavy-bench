@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-100"})}
 ${x(UIProgress,{pageId:"page-100"})}
 ${x(UIIcon,{pageId:"page-100"})}
 </div></div></div></div>`;
+export default SuccessionPlanning;

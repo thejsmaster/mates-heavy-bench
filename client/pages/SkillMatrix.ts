@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-099"})}
 ${x(UIProgress,{pageId:"page-099"})}
 ${x(UIIcon,{pageId:"page-099"})}
 </div></div></div></div>`;
+export default SkillMatrix;

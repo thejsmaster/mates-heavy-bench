@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-076"})}
 ${x(UIProgress,{pageId:"page-076"})}
 ${x(UIIcon,{pageId:"page-076"})}
 </div></div></div></div>`;
+export default LifetimeValue;

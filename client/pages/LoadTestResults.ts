@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-061"})}
 ${x(UIProgress,{pageId:"page-061"})}
 ${x(UIIcon,{pageId:"page-061"})}
 </div></div></div></div>`;
+export default LoadTestResults;

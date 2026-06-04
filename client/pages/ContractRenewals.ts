@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-107"})}
 ${x(UIProgress,{pageId:"page-107"})}
 ${x(UIIcon,{pageId:"page-107"})}
 </div></div></div></div>`;
+export default ContractRenewals;

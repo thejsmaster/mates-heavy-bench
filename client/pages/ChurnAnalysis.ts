@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-050"})}
 ${x(UIProgress,{pageId:"page-050"})}
 ${x(UIIcon,{pageId:"page-050"})}
 </div></div></div></div>`;
+export default ChurnAnalysis;

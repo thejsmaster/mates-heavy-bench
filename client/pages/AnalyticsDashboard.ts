@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-001"})}
 ${x(UIProgress,{pageId:"page-001"})}
 ${x(UIIcon,{pageId:"page-001"})}
 </div></div></div></div>`;
+export default AnalyticsDashboard;

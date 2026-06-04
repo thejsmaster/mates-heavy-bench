@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-027"})}
 ${x(UIProgress,{pageId:"page-027"})}
 ${x(UIIcon,{pageId:"page-027"})}
 </div></div></div></div>`;
+export default BudgetPlanning;

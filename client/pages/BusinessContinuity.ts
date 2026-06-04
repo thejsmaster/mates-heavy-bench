@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-105"})}
 ${x(UIProgress,{pageId:"page-105"})}
 ${x(UIIcon,{pageId:"page-105"})}
 </div></div></div></div>`;
+export default BusinessContinuity;

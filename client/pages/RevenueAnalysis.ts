@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-011"})}
 ${x(UIProgress,{pageId:"page-011"})}
 ${x(UIIcon,{pageId:"page-011"})}
 </div></div></div></div>`;
+export default RevenueAnalysis;

@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-014"})}
 ${x(UIProgress,{pageId:"page-014"})}
 ${x(UIIcon,{pageId:"page-014"})}
 </div></div></div></div>`;
+export default FeedbackSurvey;

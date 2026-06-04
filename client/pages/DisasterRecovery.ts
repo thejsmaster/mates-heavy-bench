@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-104"})}
 ${x(UIProgress,{pageId:"page-104"})}
 ${x(UIIcon,{pageId:"page-104"})}
 </div></div></div></div>`;
+export default DisasterRecovery;

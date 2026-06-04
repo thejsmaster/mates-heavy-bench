@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-030"})}
 ${x(UIProgress,{pageId:"page-030"})}
 ${x(UIIcon,{pageId:"page-030"})}
 </div></div></div></div>`;
+export default PayrollSummary;

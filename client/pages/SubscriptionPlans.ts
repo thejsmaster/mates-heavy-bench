@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-013"})}
 ${x(UIProgress,{pageId:"page-013"})}
 ${x(UIIcon,{pageId:"page-013"})}
 </div></div></div></div>`;
+export default SubscriptionPlans;

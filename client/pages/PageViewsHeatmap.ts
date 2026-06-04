@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-065"})}
 ${x(UIProgress,{pageId:"page-065"})}
 ${x(UIIcon,{pageId:"page-065"})}
 </div></div></div></div>`;
+export default PageViewsHeatmap;

@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-020"})}
 ${x(UIProgress,{pageId:"page-020"})}
 ${x(UIIcon,{pageId:"page-020"})}
 </div></div></div></div>`;
+export default WorkflowBuilder;

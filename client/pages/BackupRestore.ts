@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-059"})}
 ${x(UIProgress,{pageId:"page-059"})}
 ${x(UIIcon,{pageId:"page-059"})}
 </div></div></div></div>`;
+export default BackupRestore;

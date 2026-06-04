@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-094"})}
 ${x(UIProgress,{pageId:"page-094"})}
 ${x(UIIcon,{pageId:"page-094"})}
 </div></div></div></div>`;
+export default LeaveManagement;

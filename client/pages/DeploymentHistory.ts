@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-056"})}
 ${x(UIProgress,{pageId:"page-056"})}
 ${x(UIIcon,{pageId:"page-056"})}
 </div></div></div></div>`;
+export default DeploymentHistory;

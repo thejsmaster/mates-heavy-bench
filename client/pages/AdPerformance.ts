@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-044"})}
 ${x(UIProgress,{pageId:"page-044"})}
 ${x(UIIcon,{pageId:"page-044"})}
 </div></div></div></div>`;
+export default AdPerformance;

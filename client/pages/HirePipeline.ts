@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-097"})}
 ${x(UIProgress,{pageId:"page-097"})}
 ${x(UIIcon,{pageId:"page-097"})}
 </div></div></div></div>`;
+export default HirePipeline;

@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-009"})}
 ${x(UIProgress,{pageId:"page-009"})}
 ${x(UIIcon,{pageId:"page-009"})}
 </div></div></div></div>`;
+export default SupportTickets;

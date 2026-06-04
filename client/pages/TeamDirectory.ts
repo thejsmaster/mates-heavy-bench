@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-010"})}
 ${x(UIProgress,{pageId:"page-010"})}
 ${x(UIIcon,{pageId:"page-010"})}
 </div></div></div></div>`;
+export default TeamDirectory;

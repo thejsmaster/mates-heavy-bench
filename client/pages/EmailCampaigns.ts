@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-042"})}
 ${x(UIProgress,{pageId:"page-042"})}
 ${x(UIIcon,{pageId:"page-042"})}
 </div></div></div></div>`;
+export default EmailCampaigns;

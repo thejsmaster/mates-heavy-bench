@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-089"})}
 ${x(UIProgress,{pageId:"page-089"})}
 ${x(UIIcon,{pageId:"page-089"})}
 </div></div></div></div>`;
+export default BoardReport;

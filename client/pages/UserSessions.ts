@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-064"})}
 ${x(UIProgress,{pageId:"page-064"})}
 ${x(UIIcon,{pageId:"page-064"})}
 </div></div></div></div>`;
+export default UserSessions;

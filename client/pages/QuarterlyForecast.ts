@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-084"})}
 ${x(UIProgress,{pageId:"page-084"})}
 ${x(UIIcon,{pageId:"page-084"})}
 </div></div></div></div>`;
+export default QuarterlyForecast;

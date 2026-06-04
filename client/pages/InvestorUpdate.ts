@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-090"})}
 ${x(UIProgress,{pageId:"page-090"})}
 ${x(UIIcon,{pageId:"page-090"})}
 </div></div></div></div>`;
+export default InvestorUpdate;

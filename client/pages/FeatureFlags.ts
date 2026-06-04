@@ -47,3 +47,4 @@ ${x(UISpinner,{pageId:"page-022"})}
 ${x(UIProgress,{pageId:"page-022"})}
 ${x(UIIcon,{pageId:"page-022"})}
 </div></div></div></div>`;
+export default FeatureFlags;
