@@ -1,4 +1,6 @@
 import { html, x, pathAtom } from "mates";
+
+let _modCount = 0;
 import { ABTestResults } from "./pages/ABTestResults.ts";
 import { AdPerformance } from "./pages/AdPerformance.ts";
 import { AffiliateNetwork } from "./pages/AffiliateNetwork.ts";
@@ -220,6 +222,8 @@ const _pages: Record<string, any> = {
 };
 
 const App = () => {
+  console.log('[SSR] App called');
+  console.log('[SSR] module counter:', ++_modCount);
   const p = pathAtom();
   const C = _pages[p];
   return C
