@@ -1,0 +1,27 @@
+steps:
+  - name: "gcr.io/cloud-builders/docker"
+    args:
+      - build
+      - -t
+      - us-central1-docker.pkg.dev/$PROJECT_ID/mates-repo/mates-bench:$COMMIT_SHA
+      - .
+  - name: "gcr.io/cloud-builders/docker"
+    args:
+      - push
+      - us-central1-docker.pkg.dev/$PROJECT_ID/mates-repo/mates-bench:$COMMIT_SHA
+  - name: "gcr.io/google.com/cloudsdktool/google-cloud-cli"
+    entrypoint: gcloud
+    args:
+      - run
+      - deploy
+      - mates-bench
+      - --image=us-central1-docker.pkg.dev/$PROJECT_ID/mates-repo/mates-bench:$COMMIT_SHA
+      - --region=us-central1
+      - --cpu=4
+      - --memory=4Gi
+      - --min-instances=2
+      - --concurrency=1000
+      - --allow-unauthenticated
+      - --timeout=60
+      - --port=3000
+timeout: 1800s
