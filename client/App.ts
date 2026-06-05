@@ -1,15 +1,4 @@
 import { Router, html, navigateTo } from "mates";
-import sample_gif from "./assets-test/sample.gif";
-import sample_ico from "./assets-test/sample.ico";
-import sample_jpg from "./assets-test/sample.jpg";
-import sample_json from "./assets-test/sample.json";
-import sample_png from "./assets-test/sample.png";
-import sample_svg from "./assets-test/sample.svg";
-import sample_ttf from "./assets-test/sample.ttf";
-import sample_txt from "./assets-test/sample.txt";
-import sample_webp from "./assets-test/sample.webp";
-import sample_xml from "./assets-test/sample.xml";
-
 // ── Page name → path mapping (generated) ──────────────────────────────────
 const PAGES: Array<{ path: string; name: string; file: string }> = [
   { path: "/page-001", name: "ABTestResults",       file: "ABTestResults.ts" },
@@ -133,9 +122,7 @@ const Landing = () => () => html`
         108 pages · 20 components each · 4 CSS files each — click any page to
         navigate
       </p>
-      <div style="font-size:1rem;margin:0 0 1rem;color:#666">Assets: json, ttf, txt, xml</div>
-      <div style="display:flex;flex-wrap:wrap;align-items:center;gap:0.5rem;margin-bottom:1.5rem"><img src="${sample_gif}" alt="gif" style="width:50px;height:50px;object-fit:contain;border-radius:4px" title="gif"/> <img src="${sample_ico}" alt="ico" style="width:32px;height:32px;object-fit:contain;border-radius:4px" title="ico"/> <img src="${sample_jpg}" alt="jpg" style="width:50px;height:50px;object-fit:contain;border-radius:4px" title="jpg"/> <img src="${sample_png}" alt="png" style="width:50px;height:50px;object-fit:contain;border-radius:4px" title="png"/> <img src="${sample_svg}" alt="svg" style="width:32px;height:32px;object-fit:contain;border-radius:4px" title="svg"/> <img src="${sample_webp}" alt="webp" style="width:50px;height:50px;object-fit:contain;border-radius:4px" title="webp"/></div>
-      <div style="
+           <div style="
         display:grid;
         grid-template-columns:repeat(auto-fill,minmax(160px,1fr));
         gap:0.5rem
