@@ -1,46 +1,52 @@
-import { renderX } from "mates";
+import { renderX, hydrationPending, effect, atom } from "mates";
 import App from "./App.ts";
 
 const app = document.getElementById("app");
 if (!app) throw new Error("#app not found");
 
-// SSR-detection: if #app-ssr exists, we have SSR content to hydrate
 const ssr = document.getElementById("app-ssr");
 
 if (!ssr) {
-  // No SSR — just render (dev mode)
   renderX(App, app);
 } else {
-  // Build the entire app in a detached div.
-  // Components mount immediately via constructor() + _setup(),
-  // fire asyncAction calls, fetch data — all off-screen.
   const client = document.createElement("div");
   client.id = "app-client";
+  client.style.display = "none";
+  client.setAttribute("aria-hidden", "true");
+  app.appendChild(client);
+
   renderX(App, client);
 
+  const hydrated = atom(false);
   let swapped = false;
-
-  function isReady(): boolean {
-    // Components show "—" placeholder until async data arrives
-    return !client.textContent?.includes("—") && client.textContent!.length > 200;
-  }
+  let cleanupEffect: (() => void) | null = null;
 
   function doSwap() {
     if (swapped) return;
     swapped = true;
-    // Atomic swap: replace SSR container with client container.
-    // Components' connectedCallback fires — they see _hasMounted
-    // is true (set by constructor _setup), so they skip re-mount.
-    // The DOM swaps in one frame — no flash.
+    hydrated.set(true);
+    if (cleanupEffect) { cleanupEffect(); cleanupEffect = null; }
     ssr.replaceWith(client);
   }
 
-  // Check readiness after a macro task
-  setTimeout(function check() {
-    if (isReady()) {
+  // Safety net: force swap after 3s
+  setTimeout(doSwap, 3000);
+
+  // Defer to after microtasks — scheduler flushes, components mount,
+  // asyncAction fires, fetch interceptor increments the counter.
+  queueMicrotask(() => {
+    if (hydrationPending() === 0) {
       doSwap();
     } else {
-      setTimeout(check, 16);
+      // Effect fires when counter changes. Each time it hits 0,
+      // schedule a swap on the next macrotask (with double-check).
+      cleanupEffect = effect(() => {
+        if (hydrated()) return;
+        if (hydrationPending() > 0) return;
+        setTimeout(() => {
+          if (!hydrated() && hydrationPending() === 0) doSwap();
+        }, 0);
+      });
     }
-  }, 0);
+  });
 }
