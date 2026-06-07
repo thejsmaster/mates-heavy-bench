@@ -1,4 +1,4 @@
-import { Router, html, navigateTo } from "mates";
+import { Router, asyncAction, html, navigateTo } from "mates";
 // ── Page name → path mapping (generated) ──────────────────────────────────
 const PAGES: Array<{ path: string; name: string; file: string }> = [
   { path: "/page-001", name: "ABTestResults",       file: "ABTestResults.ts" },
@@ -110,6 +110,14 @@ const PAGES: Array<{ path: string; name: string; file: string }> = [
   { path: "/page-107", name: "WorkflowBuilder",      file: "WorkflowBuilder.ts" },
   { path: "/page-108", name: "YearEndReview",        file: "YearEndReview.ts" },
 ];
+
+const test  = asyncAction(async ()=>{
+  const p = new Promise((r)=>{
+    setTimeout(()=>{r(null)}, 2000);
+  }); 
+  await p;
+});
+test();
 
 // ── Landing / not-found page with navigable link grid ────────────────────
 const Landing = () => () => html`
