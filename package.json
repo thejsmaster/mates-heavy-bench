@@ -10,8 +10,8 @@
     "generate": "npx tsx scripts/generate.ts"
   },
   "dependencies": {
-    "mates": "^0.4.0-beta.3",
-    "mates-fullstack": "^1.0.0-beta.42",
+    "mates": "^0.4.0-beta.4",
+    "mates-fullstack": "^1.0.0-beta.43",
     "mates-ui": "*"
   },
   "devDependencies": {
