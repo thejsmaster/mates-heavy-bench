@@ -1,4 +1,4 @@
-import { hydrateSsr } from "mates-fullstack/client";
+import { renderX } from "mates";
 import App from "./App.ts";
-
-hydrateSsr(App);
+const root = document.getElementById("app");
+if (root) { root.innerHTML = ""; renderX(App, root); }
